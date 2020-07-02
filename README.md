@@ -8,7 +8,7 @@ Getting Started
 Clone and build the project
 
 ```
-git clone https://github.com/Hlulani/afrikana-microservice.git
+git clone https://github.com/Hlulani/bookstore.git
 cd bookstore-microservice 
 mvn spring-boot:run
 ```

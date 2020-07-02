@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:errorresource xmlns:ns2="com.bookstore.jaxb">
+    <bookstore>
+        <book>
+            <title>Everyday Italian</title>
+            <year>2005</year>
+            <price>30.0</price>
+            <author>Giada De Laurentiis</author>
+            <author>Sam T. Bruce</author>
+        </book>
+        <book>
+            <title>Learning XML</title>
+            <year>2003</year>
+            <price>39.95</price>
+            <author>Erik T. Ray</author>
+        </book>
+        <book>
+            <price>0.0</price>
+        </book>
+    </bookstore>
+</ns2:errorresource>

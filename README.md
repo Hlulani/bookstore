@@ -26,7 +26,7 @@ To run MSSQL locally via docker:
 ```
    
    ### Connect to MSSQL
-Create a new database inside your schema and name it: afrikana.
+Create a new database inside your schema and name it: bookstore.
 
 For command line use: https://www.npmjs.com/package/sql-cli
 

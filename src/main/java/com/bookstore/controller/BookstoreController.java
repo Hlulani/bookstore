@@ -34,31 +34,32 @@ public class BookstoreController {
     }
 
     @PostMapping
-//    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(value = HttpStatus.CREATED)
     public BookDto createBooks(@RequestBody BookDto book) {
         return bookStoreService.createBooks(book);
     }
 
     @GetMapping
+    @CrossOrigin(origins = "*")
     public List<BookDto> getAllBooks() {
         return bookStoreService.getAllBooks();
     }
 
     @GetMapping("/book/{id}")
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*")
     public Book getBookById(@PathVariable(value = "id") long bookId) throws ResourceNotFoundException {
         return  bookStoreService.getBookById(bookId);
     }
 
    @PutMapping("/book/{id}")
-   @CrossOrigin(origins = "http://localhost:4200")
+   @CrossOrigin(origins = "*")
    public Book updateBooks(@PathVariable(value = "id") long bookId, @RequestBody Book bookDetails) throws ResourceNotFoundException {
         return bookStoreService.updateBooks(bookId, bookDetails);
    }
 
     @DeleteMapping("/book/{id}")
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "*")
     public Map<String, Boolean> deleteBook(@PathVariable(value = "id") long bookId) throws ResourceNotFoundException {
         return bookStoreService.deleteBook(bookId);
     }

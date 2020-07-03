@@ -67,6 +67,7 @@ public class BookStoreServiceImpl implements BookStoreService {
         List<Book> bookList = bookStoreRepository.findAll();
 
         return bookList.stream().map(book -> BookDto.builder()
+                .id(book.getId())
                 .author(book.getAuthor())
                 .name(book.getName())
                 .price(book.getPrice())
